@@ -4,7 +4,9 @@ mkdir ${HOME}/.config/screenlayout
 ln -s ${PWD}/.config/screenlayout/office_layout.sh ${HOME}/.config/screenlayout/office_layout.sh
 
 # set up spacemacs
-sudo apt install emacs
+sudo add-apt-repository ppa:kelleyk/emacs
+sudo apt update
+sudo apt install emacs26
 git clone --single-branch --branch develop https://www.github.com/syl20bnr/spacemacs ~/.emacs.d
 git clone https://www.github.com/campbellC/spacemacsConfig.git ${HOME}/.spacemacs.d
 mkdir -p ${HOME}/.config/systemd/user
