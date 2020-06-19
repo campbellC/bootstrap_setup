@@ -135,25 +135,10 @@ export GPG_TTY=$(tty)
 # powerlevel9k customization
 #POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 #POWERLEVEL9K_SHORTEN_DELIMITER=".."
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs newline)
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_with_folder_marker"
 POWERLEVEL9K_SHORTEN_FOLDER_MARKER=".git"
 
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/eudos/bin/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/eudos/bin/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/eudos/bin/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="$PATH:/home/eudos/bin/anaconda3/bin:"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
 
 export PATH="$PATH:${HOME}/Developer/depot_tools"
 export PATH="$PATH:${HOME}/.local/bin"
