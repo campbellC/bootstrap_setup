@@ -156,4 +156,5 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 export PATH="$PATH:${HOME}/Developer/depot_tools"
+export PATH="$PATH:${HOME}/.local/bin"
 
